@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casper Büfe - Menü</title>
+    <style>
+        /* Genel Ayarlar */
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Üst Menü */
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+ nav a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+        /* Sayfa İçeriği */
+         .sayfa-icerik {
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: white;
+            border-radius: 10px;
+        }
+        /* Başlıklar */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+
+        h2 {
+            background-color: #FFD700;
+            color: #333;
+             margin: 20px 0 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+
+        /* İletişim Kartları */
+        .iletisim-kartlar {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .iletisim-kart {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #FFD700;
+        }
+
+        .iletisim-kart h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .iletisim-kart p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Sipariş Butonları */
+        .siparis-butonlar {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+           display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .buton {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            font-size: 38px;
+            cursor: pointer;
+            
+        }
+
+        .buton:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp {
+            background-color: #25D366;
+        }
+
+        .telefon {
+            background-color: #FFD700;
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Üst Menü -->
+    <header>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h1 style="color: #FFD700; font-size: 48px; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                ☕ CASPER BÜFE ☕
+            </h1>
+            <p style="color: #ccc; font-size: 16px; margin-top: 5px;">Kahve ve Lezzet Durağı</p>
+        </div>
+       <nav>
+            <a href="index.html">ANA SAYFA</a>
+            <a href="menu.html">MENÜ</a>
+            <a href="iletisim.html">İLETİŞİM</a>
+        </nav>
+    </header>
+
+    <!-- İLETİŞİM İÇERİK -->
+    <div class="sayfa-icerik">
+        <h1>İLETİŞİM BİLGİLERİ</h1>
+        
+        <div class="iletisim-kartlar">
+            <div class="iletisim-kart">
+                <h3>📞 Telefon</h3>
+                <p><strong>0542 425 41 09</strong></p>
+                <p>Sipariş vermek için bizi arayın!</p>
+            </div>
+
+            <div class="iletisim-kart">
+                <h3>💬 WhatsApp</h3>
+                <p><strong>0542 425 41 09</strong></p>
+                <p>WhatsApp üzerinden sipariş verebilirsiniz</p>
+            </div>
+
+            <div class="iletisim-kart">
+                <h3>📍 Adres</h3>
+                <p><strong>Fatih Sultan Mehmet Mahallesi</strong></p>
+                <p>Balkan Cd. No:47 <br>Ümraniye / İstanbul</p>
+            </div>
+
+            <div class="iletisim-kart">
+                <h3>⏰ Çalışma Saatleri</h3>
+                <p><strong>Hafta İçi:</strong> 08:00 - 22:00</p>
+                <p><strong>Hafta Sonu:</strong> Kapalı</p>
+            </div>
+        </div>
+
+
+      
+    </div>
+
+    <!-- Sabit Sipariş Butonları -->
+    <div class="siparis-butonlar">
+        <a href="https://wa.me/905424254109" target="_blank">
+            <button class="buton whatsapp">💬</button>
+        </a>
+        <a href="tel:05424254109">
+            <button class="buton telefon">📞</button>
+        </a>
+    </div>
+</body>
